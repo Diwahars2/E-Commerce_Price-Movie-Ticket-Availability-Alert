@@ -1,5 +1,5 @@
 # E-Commerce_Price-Movie-Ticket-Availability-Alert
-Python script to get SMS notification, if the price of the Amazon, flipkart product drops to your expected price and to get ticket details from BookMyShow
+Python script to get SMS notification, if the price of the Amazon product drops to your expected price and to get ticket details from BookMyShow
 
 How does this work?
 
@@ -11,6 +11,7 @@ How does this work?
 Improvements:
 
 Have to test with Amazon Product Advertising API to get the product's price
+Have to modify flipkart code and upload
 
 Dependencies:
 
