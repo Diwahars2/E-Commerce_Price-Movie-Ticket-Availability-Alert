@@ -1,6 +1,5 @@
 import getList
 import subprocess
-#from say import *
 from twilio.rest import TwilioRestClient
 
 #Enter your Twilio account SID and Auth Token
@@ -13,13 +12,13 @@ destCellPhone = "+919901035150"
 twilioClient = TwilioRestClient(accountSid, authToken)
 
 def notify(l):
-   # for i in range(100):
+   
         print l
         message = "Tickets are up for sale in: "+l
-        twilioClient.messages.create(to="+919901035150", from_="+12019928417",body= message)
+        twilioClient.messages.create(to="xxx", from_="yyy",body= message)
 
 l = getList.getList()
-threaterList = ["Carnival Cinemas: Rockline Mall, Bangalore",
+cinemasList = ["Carnival Cinemas: Rockline Mall, Bangalore",
 "Cinepolis: Bannerghatta Road",
 "Cinepolis: ETA Mall, Magadi Road",
 "Cauvery Theatre: Sankey Road",
@@ -56,6 +55,6 @@ threaterList = ["Carnival Cinemas: Rockline Mall, Bangalore",
 "Rex Theatre: Brigade Road",
 "Sandhya Digital 4K Cinema: Madiwala"]
 
-for i in threaterList:
+for i in cinemasList:
     if i in l:
         notify(i)
